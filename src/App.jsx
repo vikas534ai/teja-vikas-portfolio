@@ -150,6 +150,11 @@ const projects = [
 
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
   return (
     <div className="app">
       <nav className="navbar">
