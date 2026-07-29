@@ -157,17 +157,53 @@ function App() {
   };
   return (
     <div className="app">
-      <nav className="navbar">
-        <div className="logo">TV</div>
+     <nav className="navbar">
+  <a href="#" className="logo" onClick={closeMenu}>
+    TV
+  </a>
 
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+  <button
+    className="menu-button"
+    type="button"
+    aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
+    aria-expanded={menuOpen}
+    onClick={() => setMenuOpen(!menuOpen)}
+  >
+    {menuOpen ? <FaTimes /> : <FaBars />}
+  </button>
+
+  <ul className={menuOpen ? "nav-links nav-links-open" : "nav-links"}>
+    <li>
+      <a href="#about" onClick={closeMenu}>
+        About
+      </a>
+    </li>
+
+    <li>
+      <a href="#experience" onClick={closeMenu}>
+        Experience
+      </a>
+    </li>
+
+    <li>
+      <a href="#skills" onClick={closeMenu}>
+        Skills
+      </a>
+    </li>
+
+    <li>
+      <a href="#projects" onClick={closeMenu}>
+        Projects
+      </a>
+    </li>
+
+    <li>
+      <a href="#contact" onClick={closeMenu}>
+        Contact
+      </a>
+    </li>
+  </ul>
+</nav>
 
       <motion.section
         className="hero"
