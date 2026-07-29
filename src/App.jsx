@@ -310,6 +310,115 @@ function App() {
           ))}
         </div>
       </section>
+      <section id="skills" className="section skills-section">
+  <div className="section-heading">
+    <p>Technical Expertise</p>
+    <h2>Skills and Technologies</h2>
+  </div>
+
+  <div className="skills-grid">
+    {skills.map((skillGroup) => (
+      <motion.article
+        className="skill-card"
+        key={skillGroup.category}
+        initial={{ opacity: 0, y: 35 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.6 }}
+      >
+        <h3>{skillGroup.category}</h3>
+
+        <div className="skill-tags">
+          {skillGroup.items.map((skill) => (
+            <span key={skill}>{skill}</span>
+          ))}
+        </div>
+      </motion.article>
+    ))}
+  </div>
+</section>
+
+<section id="projects" className="section projects-section">
+  <div className="section-heading">
+    <p>Selected Work</p>
+    <h2>Featured Projects</h2>
+  </div>
+
+  <div className="projects-grid">
+    {projects.map((project, index) => (
+      <motion.article
+        className="project-card"
+        key={project.title}
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{
+          duration: 0.6,
+          delay: index * 0.1
+        }}
+      >
+        <div className="project-number">
+          {String(index + 1).padStart(2, "0")}
+        </div>
+
+        <h3>{project.title}</h3>
+
+        <p>{project.description}</p>
+
+        <div className="project-technologies">
+          {project.technologies.map((technology) => (
+            <span key={technology}>{technology}</span>
+          ))}
+        </div>
+      </motion.article>
+    ))}
+  </div>
+</section>
+
+<section id="contact" className="section contact-section">
+  <motion.div
+    className="contact-card"
+    initial={{ opacity: 0, scale: 0.96 }}
+    whileInView={{ opacity: 1, scale: 1 }}
+    viewport={{ once: true, amount: 0.3 }}
+    transition={{ duration: 0.7 }}
+  >
+    <p className="contact-label">Let&apos;s Connect</p>
+
+    <h2>Interested in working together?</h2>
+
+    <p>
+      I am open to opportunities involving Java, Spring Boot,
+      React, microservices, AWS, cloud platforms, enterprise
+      modernization, and AI-enabled application development.
+    </p>
+
+    <div className="contact-actions">
+      <a
+        href="mailto:vikas534ai@gmail.com"
+        className="primary"
+      >
+        Send Email
+      </a>
+
+      <a
+        href="https://linkedin.com/in/tejavikasd534"
+        target="_blank"
+        rel="noreferrer"
+        className="secondary"
+      >
+        View LinkedIn
+      </a>
+    </div>
+  </motion.div>
+</section>
+
+<footer className="footer">
+  <p>
+    © {new Date().getFullYear()} Teja Vikas Donepudi.
+    Built with React and Vite.
+  </p>
+</footer>
     </div>
   );
 }
