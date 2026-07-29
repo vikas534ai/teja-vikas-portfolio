@@ -48,6 +48,104 @@ const experiences = [
   }
 ];
 
+const skills = [
+  {
+    category: "Backend",
+    items: [
+      "Java 8/11/17",
+      "Spring Boot",
+      "Spring MVC",
+      "Spring Security",
+      "Spring Data JPA",
+      "Hibernate",
+      "REST APIs",
+      "Microservices"
+    ]
+  },
+  {
+    category: "Frontend",
+    items: [
+      "React",
+      "Angular",
+      "JavaScript",
+      "TypeScript",
+      "Redux",
+      "HTML5",
+      "CSS3",
+      "Bootstrap"
+    ]
+  },
+  {
+    category: "Cloud & DevOps",
+    items: [
+      "AWS",
+      "Docker",
+      "Kubernetes",
+      "Jenkins",
+      "GitHub Actions",
+      "Terraform",
+      "SonarQube",
+      "Maven"
+    ]
+  },
+  {
+    category: "Data & Messaging",
+    items: [
+      "Oracle",
+      "MongoDB",
+      "Cassandra",
+      "SQL",
+      "PL/SQL",
+      "Apache Kafka",
+      "IBM MQ",
+      "JMS"
+    ]
+  }
+];
+
+const projects = [
+  {
+    title: "Digital Banking Platform",
+    description:
+      "A secure banking application concept with customer onboarding, account management, transaction processing, authentication, audit logging, and administrative dashboards.",
+    technologies: [
+      "Java",
+      "Spring Boot",
+      "React",
+      "PostgreSQL",
+      "Kafka",
+      "AWS"
+    ]
+  },
+  {
+    title: "Enterprise Migration Dashboard",
+    description:
+      "An internal dashboard concept for monitoring large-scale data migration workflows, reconciliation results, processing failures, retries, and operational status.",
+    technologies: [
+      "React",
+      "Spring Boot",
+      "REST APIs",
+      "Oracle",
+      "JMS",
+      "Docker"
+    ]
+  },
+  {
+    title: "AI Developer Assistant",
+    description:
+      "An AI-enabled engineering assistant concept for code explanation, documentation generation, API analysis, knowledge retrieval, and developer productivity.",
+    technologies: [
+      "Java",
+      "Python",
+      "React",
+      "RAG",
+      "LLM APIs",
+      "AWS"
+    ]
+  }
+];
+
+
 function App() {
   return (
     <div className="app">
@@ -212,102 +310,6 @@ function App() {
           ))}
         </div>
       </section>
-      const skills = [
-  {
-    category: "Backend",
-    items: [
-      "Java 8/11/17",
-      "Spring Boot",
-      "Spring MVC",
-      "Spring Security",
-      "Spring Data JPA",
-      "Hibernate",
-      "REST APIs",
-      "Microservices"
-    ]
-  },
-  {
-    category: "Frontend",
-    items: [
-      "React",
-      "Angular",
-      "JavaScript",
-      "TypeScript",
-      "Redux",
-      "HTML5",
-      "CSS3",
-      "Bootstrap"
-    ]
-  },
-  {
-    category: "Cloud & DevOps",
-    items: [
-      "AWS",
-      "Docker",
-      "Kubernetes",
-      "Jenkins",
-      "GitHub Actions",
-      "Terraform",
-      "SonarQube",
-      "Maven"
-    ]
-  },
-  {
-    category: "Data & Messaging",
-    items: [
-      "Oracle",
-      "MongoDB",
-      "Cassandra",
-      "SQL",
-      "PL/SQL",
-      "Apache Kafka",
-      "IBM MQ",
-      "JMS"
-    ]
-  }
-];
-
-const projects = [
-  {
-    title: "Digital Banking Platform",
-    description:
-      "A secure banking application concept with customer onboarding, account management, transaction processing, authentication, audit logging, and administrative dashboards.",
-    technologies: [
-      "Java",
-      "Spring Boot",
-      "React",
-      "PostgreSQL",
-      "Kafka",
-      "AWS"
-    ]
-  },
-  {
-    title: "Enterprise Migration Dashboard",
-    description:
-      "An internal dashboard concept for monitoring large-scale data migration workflows, reconciliation results, processing failures, retries, and operational status.",
-    technologies: [
-      "React",
-      "Spring Boot",
-      "REST APIs",
-      "Oracle",
-      "JMS",
-      "Docker"
-    ]
-  },
-  {
-    title: "AI Developer Assistant",
-    description:
-      "An AI-enabled engineering assistant concept for code explanation, documentation generation, API analysis, knowledge retrieval, and developer productivity.",
-    technologies: [
-      "Java",
-      "Python",
-      "React",
-      "RAG",
-      "LLM APIs",
-      "AWS"
-    ]
-  }
-];
     </div>
   );
 }
