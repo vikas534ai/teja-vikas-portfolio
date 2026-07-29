@@ -5,9 +5,13 @@ import {
   FaLinkedin,
   FaEnvelope,
   FaBars,
-  FaTimes
+  FaTimes,
+  FaJava,
+  FaReact,
+  FaAws,
+  FaArrowRight,
+  FaMapMarkerAlt
 } from "react-icons/fa";
-
 const experiences = [
   {
     company: "Goldman Sachs",
