@@ -1,0 +1,96 @@
+/*
+  Black & White theme override for Teja Vikas Portfolio
+  Add this stylesheet AFTER the existing <style> block in index.html:
+  <link rel="stylesheet" href="black-white-theme.css">
+*/
+
+:root {
+  --bg: #050505;
+  --bg-panel: rgba(18, 18, 18, 0.72);
+  --bg-panel-solid: #111111;
+  --bg-panel-2: #181818;
+  --border: #3a3a3a;
+  --border-soft: #242424;
+  --text: #f5f5f5;
+  --text-muted: #b8b8b8;
+  --text-dim: #777777;
+  --green: #ffffff;
+  --amber: #d7d7d7;
+  --blue: #ffffff;
+}
+
+body {
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(circle at 15% 0%, rgba(255, 255, 255, 0.055), transparent 45%),
+    radial-gradient(circle at 85% 15%, rgba(255, 255, 255, 0.03), transparent 40%);
+}
+
+::selection {
+  background: #ffffff;
+  color: #000000;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline-color: #ffffff;
+}
+
+header.nav {
+  background: rgba(5, 5, 5, 0.88);
+}
+
+.dot-live {
+  background: #ffffff;
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.55);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.42);
+  }
+  70% {
+    box-shadow: 0 0 0 7px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+
+.btn-primary {
+  background: #ffffff;
+  color: #050505;
+  border: 1px solid #ffffff;
+}
+
+.btn-primary:hover {
+  background: #dedede;
+  border-color: #dedede;
+}
+
+.btn-ghost:hover {
+  background: #ffffff;
+  color: #050505;
+  border-color: #ffffff;
+}
+
+.statusbar,
+.contact-panel {
+  background: linear-gradient(180deg, #181818, #0e0e0e);
+}
+
+.job,
+.log,
+.skill-card {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.22);
+}
+
+.job:hover,
+.skill-card:hover {
+  border-color: #626262;
+}
+
+.chip,
+.skill-tags span {
+  background: #171717;
+}
