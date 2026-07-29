@@ -1,8 +1,11 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import {
   FaGithub,
   FaLinkedin,
-  FaEnvelope
+  FaEnvelope,
+  FaBars,
+  FaTimes
 } from "react-icons/fa";
 
 const experiences = [
